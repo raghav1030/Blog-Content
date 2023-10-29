@@ -12,7 +12,7 @@ const Blog = ({posts}) => {
 
         <p className='text-[14px] mt-1 italic '>By <span>{posts.author}</span> on
         <NavLink to={`/categories/${posts.category.replaceAll(' ', '-')}`} >
-        <span  className='underline font-bold '>{posts.category}</span>
+        <span  className='underline font-semibold '> {posts.category}</span>
         </NavLink>
         </p>
         <p className='text-[14px]  '>Posted on : {posts.date}</p>
